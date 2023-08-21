@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.conteiner-fluid{
+    width: 100%;
+    padding: 0 ;
+    
+
+}
+.conteiner{
+    margin: 0 auto;
+    max-width: 1300px;
+    
+}
+
+header{
+    min-height: 80px;
+    background: white;
+}
+
+header .conteiner{
+    display: flex;
+    align-items: center;
+    
+}
+header nav a{
+    text-decoration: none;
+    color: gray;
+    padding: 0 12px;
+}
+
+header nav a:hover{
+    color: blue;
+    background: orange;
+    text-decoration: underline;
+}
+
+#logo :hover{
+cursor: pointer;
+
+}
+header .burger{
+    display: none;
+    background: blue;
+}
+header .burger:hover{
+    cursor: pointer;
+    background: orange;
+    
+}
+
+
+ 
+.strip{
+    min-height: 300px;
+    
+}
+
+.strip .conteiner{
+    background-image: url(images/strip.png);
+    background-size: cover;
+    max-width: 2000px;
+   min-height: inherit;
+    margin: 0 auto;
+   
+}
+.strip h1{
+    color: white;
+    
+}
+.strip .conteiner .h1{
+   
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    margin-right: 450px;
+    
+    
+}
+main{
+    min-height: 200px;
+    background: rgb(197, 194, 194);
+}
+main .conteiner{
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1400px;
+    flex-wrap: wrap;
+   
+}
+
+main .card{
+    background:white;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+  
+    
+    
+    
+}
+
+.card h2{
+    cursor: pointer;
+}
+.card h2:hover{
+    background-color: orange;
+    color: blue;
+}
+.card img{
+    cursor: pointer;
+}
+.card img:hover{
+    background-color: rgb(0, 217, 255);
+    border-radius: 25px;
+}
+
+footer{
+    background: rgba(2, 2, 108, 0.845);
+}
+    
+footer .conteiner{
+    
+    color: white;
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+   
+}
+ .conteiner button{
+    background: gray;
+    color: blanchedalmond;
+   padding: 12px 32px;
+    border: none;
+
+}
+
+.conteiner button:hover{
+    cursor: pointer;
+    background: black;
+
+
+}
+.conteiner .about p:hover{
+    cursor: pointer;
+    color: orange;
+    
+}
+
+
+    
+
+ @media (max-width:728px){
+  .conteiner  .card{
+        background: orange;
+    }
+    main .card{
+        margin-top: 24px;
+        width: 100%;
+    }
+        header nav{
+            display: none;
+        }
+       
+   .strip .conteiner .h1{
+    width: 100%;
+   }
+
+   header .conteiner .input{
+    display: none;
+   }
+
+   header .burger{
+    display: block;
+}
+
+footer .conteiner{
+    width: 100%;
+    
+}
+
+
+}
+
+
+    
